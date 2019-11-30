@@ -1,0 +1,20 @@
+{
+  "name": "sassapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass sass/style.sass -o css -wach",
+    "autoprefixer": "node-sass sass/style.sass -o css && npx postcss css/style.css  --use autoprefixer -d css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.2",
+    "node-sass": "^4.13.0",
+    "postcss": "^7.0.23",
+    "postcss-cli": "^6.1.3"
+  }
+}
